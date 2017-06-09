@@ -1,0 +1,194 @@
+@charset "utf-8";
+/* CSS Document */
+
+.ui-menu, .ui-widget, .ui-widget-content, .ui-autocomplete, .ui-front {
+	display: none;
+}
+
+a:visited, a:link {
+	color: white;
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+}
+
+td, .reputation > table > tbody > tr > th, .reputation > table > tbody > tr > td {
+	padding: 4px 6px;
+}
+
+tr:nth-child(even) {
+	background-color: #90805f;
+}
+
+.result {
+	width: 90%;
+	margin-left: 5%;
+	height: auto;
+	padding-bottom: 15px;
+	padding-top: 15px;
+	float: left;
+	text-align: center;
+}
+
+.head, .equip, .dungeons, .reputation, .raids {
+	box-shadow: 0px 10px 35px 10px rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 0px 10px 35px 10px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0px 10px 35px 10px rgba(0, 0, 0, 0.5);
+}
+
+.head, .thumbnail, .name, .description, .equip, .dungeons, .reputation {
+	float: left;
+}
+
+.head, .equip, .dungeons, .reputation, .raid_1, .raid_2, .raid_3, .raid_4 {
+	background-color: #84724E;
+}
+
+.head {
+	width: 100%;
+	height: 84px;
+	text-align: left;
+	transition: 1s ease-in-out;
+}
+
+.thumbnail, .spec {
+	height: 84px;
+}
+
+.name {
+	width: calc(100% - 168px);
+	text-align: center;
+	height: 84px;
+	padding-top: 5px;
+}
+
+.spec {
+	float: right;
+}
+
+.eq {
+	float: right;
+	width: calc(15% - 168px);
+}
+
+.equip {
+	width: 41%;
+	height: 60%;
+	margin-top: 15px;
+	text-align: left;
+}
+
+.equip > p, .dungeons > p {
+	color: orange;
+	font-size: 20px;
+	text-align: center;
+}
+
+.equipment_table, .dungeons_table, .reputation, .reputation > table {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.raid_1, .raid_2, .raid_3, .raid_4 {
+	width: 25%;
+	float: left;
+}
+
+.item_slot {
+	text-transform: capitalize;
+	max-width: 100px;
+}
+
+.legendary {
+	color: orange;
+}
+
+.relics {
+	text-align: center;
+}
+
+.dungeons {
+	width: 41%;
+	height: auto;
+	margin-top: 15px;
+	margin-left: 2.5%;
+}
+
+.reputation {
+	width: 13%;
+	float: left;
+	margin-left: 2.5%;
+	margin-top: 15px;
+}
+
+.equip > p, .dungeons > p {
+	color: orange;
+	font-size: 20px;
+	text-align: center;
+}
+
+.raid_1 > table, .raid_2 > table, .raid_3 > table, .raid_4 > table {
+	width: 25%;
+	float: left;
+}
+
+.raids {
+	margin-top: 15px;
+	float: left;
+	width: 100%;
+}
+
+.item_mod {
+	font-size: 10px;
+}
+
+.gear {
+	width: 400px;
+}
+
+.raid_1 {
+	background-image: url('../img/en.jpg');
+}
+
+.raid_2 {
+	background-image: url('../img/tov.jpg');
+}
+
+.raid_3 {
+	background-image: url('../img/nh.jpg');
+}
+
+.raid_4 {
+	background-image: url('../img/tos.jpg');
+}
+
+@media screen and (max-width: 1024px) {
+	.equip, .dungeons, .reputation {
+		width: 100%;
+		margin-left: 0px;
+	}
+	.dungeons {
+		margin-left: 0px;
+	}
+	
+	.raid_1, .raid_2, .raid_3, .raid_4 {
+		width: 100%;		
+	}
+	
+	.raid_2, .raid_3, .raid_4 {
+		margin-top: 15px;
+	}
+}
+
+@media screen and (max-width: 1922px) and (min-width: 1025px) {
+		
+	.raid_1, .raid_2, .raid_3, .raid_4 {
+		width: 50%;		
+	}
+	
+	.raid_3, .raid_4 {
+		margin-top: 15px;
+	}
+}
