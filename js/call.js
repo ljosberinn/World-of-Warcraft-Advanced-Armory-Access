@@ -40,7 +40,7 @@ function call(character, region, realm) {
 	var region = $('#region').val();
 	var realm = $('#realm').val();
 
-	var api = 'qxdrxhra6h3z5n3vrz3xks7779krxdcw';
+	var api = '';
 
 	var apiURL = 'https://' + region + '.api.battle.net/wow/character/' + realm + '/' + character + '?fields=items,statistics,achievements,talents&locale=en_GB&apikey=' + api + '';
 
@@ -1545,7 +1545,7 @@ function call(character, region, realm) {
 				var wlogs_role = 'dps';
 			}
 
-			var wlogs_api = '6e7efd712c76d48894f855c98dd00a10';
+			var wlogs_api = '';
 
 			var realm = $('#realm').val();
 
